@@ -13,6 +13,7 @@ const wagmiClient = createClient({
   connectors: w3mConnectors({ projectId, version: 2, chains }),
   provider
 })
+
 const ethereumClient = new EthereumClient(wagmiClient, chains)
 
 function App() {
