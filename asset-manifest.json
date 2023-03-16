@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/WalletConnectTest/static/css/main.4efb37a3.css",
-    "main.js": "/WalletConnectTest/static/js/main.384a3921.js",
+    "main.js": "/WalletConnectTest/static/js/main.cd4af907.js",
     "static/js/580.cdc74956.chunk.js": "/WalletConnectTest/static/js/580.cdc74956.chunk.js",
     "static/js/861.103c9365.chunk.js": "/WalletConnectTest/static/js/861.103c9365.chunk.js",
     "static/js/883.d90deee8.chunk.js": "/WalletConnectTest/static/js/883.d90deee8.chunk.js",
@@ -13,6 +13,6 @@
   },
   "entrypoints": [
     "static/css/main.4efb37a3.css",
-    "static/js/main.384a3921.js"
+    "static/js/main.cd4af907.js"
   ]
 }
