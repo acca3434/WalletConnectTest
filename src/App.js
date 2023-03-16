@@ -21,7 +21,7 @@ function App() {
     <>
       <WagmiConfig client={wagmiClient}>
         <Web3Button />
-        <Web3NetworkSwitch/>
+        <Web3NetworkSwitch/>깃허브 페이지스
       </WagmiConfig>
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
     </>
