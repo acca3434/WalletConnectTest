@@ -1,10 +1,8 @@
 
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
-import { Web3Modal,Web3NetworkSwitch} from '@web3modal/react'
+import { Web3Modal,Web3NetworkSwitch,Web3Button} from '@web3modal/react'
 import { configureChains, createClient, WagmiConfig,} from 'wagmi'
 import { arbitrum, mainnet, polygon, bsc, bscTestnet, goerli } from 'wagmi/chains'
-import Homepage from "./view/Homepage"
-
 const projectData = {
   projectId: process.env.REACT_APP_PRJECTID,
   projectUri: process.env.REACT_APP_PROJECTURI,
@@ -14,16 +12,15 @@ const projectId = projectData.projectId;
 const { provider } = configureChains(chains, [w3mProvider({projectId})])
 const wagmiClient = createClient({
   autoConnect: true,
-  connectors: w3mConnectors({ projectId, version: 2, chains }),
+  connectors: w3mConnectors({ projectId, version: 1, chains }),
   provider
 })
-
 const ethereumClient = new EthereumClient(wagmiClient, chains)
 function App() {
   return (
     <>
       <WagmiConfig client={wagmiClient}>
-        <Homepage />
+        <Web3Button />
         <Web3NetworkSwitch/>
       </WagmiConfig>
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
@@ -32,6 +29,8 @@ function App() {
 }
 
 export default App;
+
+
 
 // /*
 // import HomePageTest from './view/Web3ModalTest'
@@ -69,3 +68,31 @@ export default App;
 // const authClient = await AuthClient.init({ core, metadata });
  //     <HomePageTest/>
 // */
+
+
+
+
+// import React from "react";
+// import SignClient from "@walletconnect/sign-client";
+
+// const App = async () => {
+  
+//   const projectData = {
+//   projectId: process.env.REACT_APP_PRJECTID,
+//   projectUri: process.env.REACT_APP_PROJECTURI,
+// };
+//   const signClient = await SignClient.init({
+//   projectId: projectData.projectId,
+//   // optional parameters
+//   relayUrl: `https://relay.walletconnect.com/?projectId=${projectData.projectId}`,
+//   metadata: {
+//     name: "ExamTest",
+//     description: "ExamTest",
+//     url: "https://acca3434.github.io/WalletConnectTest/",
+//     icons: ["https://walletconnect.com/walletconnect-logo.png"],
+//   },
+// });
+//   return <div>App</div>;
+// };
+
+// export default App;
