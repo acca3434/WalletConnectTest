@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/WalletConnectTest/static/css/main.4efb37a3.css",
+    "main.js": "/WalletConnectTest/static/js/main.f22028a5.js",
+    "static/js/777.51b24789.chunk.js": "/WalletConnectTest/static/js/777.51b24789.chunk.js",
+    "static/js/593.eb99c484.chunk.js": "/WalletConnectTest/static/js/593.eb99c484.chunk.js",
+    "static/js/971.24213fd0.chunk.js": "/WalletConnectTest/static/js/971.24213fd0.chunk.js",
+    "static/js/883.d90deee8.chunk.js": "/WalletConnectTest/static/js/883.d90deee8.chunk.js",
+    "static/js/185.912f602a.chunk.js": "/WalletConnectTest/static/js/185.912f602a.chunk.js",
+    "static/js/532.19c6dc2b.chunk.js": "/WalletConnectTest/static/js/532.19c6dc2b.chunk.js",
+    "static/js/316.f57c1357.chunk.js": "/WalletConnectTest/static/js/316.f57c1357.chunk.js",
+    "static/js/540.fce37e18.chunk.js": "/WalletConnectTest/static/js/540.fce37e18.chunk.js",
+    "static/js/708.d274b282.chunk.js": "/WalletConnectTest/static/js/708.d274b282.chunk.js",
+    "static/js/503.4e1085c5.chunk.js": "/WalletConnectTest/static/js/503.4e1085c5.chunk.js",
+    "index.html": "/WalletConnectTest/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.4efb37a3.css",
+    "static/js/main.f22028a5.js"
+  ]
+}
