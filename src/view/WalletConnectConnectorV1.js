@@ -11,6 +11,8 @@ const WalletConnectConnectorV1 = async () => {
         infuraId: projectData.projectInfura,
         pollingInterval: 15000
     });
+    console.log(walletconnect?.getAccount());
+    console.log(walletconnect?.getChainId());
     await walletconnect.activate(walletconnect, undefined, true).catch((err) =>
     {
         console.log(err);
