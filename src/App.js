@@ -37,7 +37,7 @@ function App() {
       <WagmiConfig client={wagmiClient}>
         <Web3Button />
         <Button onClick={WalletConnectConnectorV1}>
-          MobileConnectWallet
+          MobileConnectWalletasdsadsadsadsd
         </Button>
         <Web3NetworkSwitch/>
       </WagmiConfig>
